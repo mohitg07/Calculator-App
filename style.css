@@ -1,0 +1,160 @@
+
+.maindiv{
+    border: 3px solid black;
+    background-color: rgb(156, 233, 233);
+    height: 500px;
+    width: 400px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas:
+    'write_area write_area write_area write_area'
+    'write_area write_area write_area write_area'
+    'all_clear delete percentage division'
+    'num7 num8 num9 multiply'
+    'num4 num5 num6 subtract'
+    'num1 num2 num3 add'
+    'dot num0 equal_to equal_to';
+}
+
+.item{
+    /* border: 2px solid black; */
+    margin: 8px;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.item:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.item.numbers{
+    background-color: black;
+}
+
+.write_area{
+    grid-area: write_area;
+    border: 2px solid black;
+    margin: 8px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    background-color: blue;
+    position: relative; 
+}
+
+#line1{
+    /* border: 2px solid black; */
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    top: 5px; 
+    right: 5px;
+    text-align: right;
+}
+
+#line2{
+    /* border: 2px solid black; */
+    color: white;
+    font-size: 35px;
+    position: absolute;
+    bottom: 5px; 
+    right: 5px;
+    text-align: right;
+}
+
+#all_clear{
+    grid-area: all_clear;
+    background-color: green
+}
+
+#delete{
+    grid-area: delete;
+    background-color: green
+}
+
+#percentage{
+    grid-area: percentage;
+    background-color: salmon;
+    /* font-weight: bold; */
+}
+
+#division{
+    grid-area: division;
+    background-color: rgb(153, 206, 100);
+    /* font-weight: bold; */
+}
+
+#multiply{
+    grid-area: multiply;
+    background-color: rgb(67, 162, 190);
+    /* font-weight: bold; */
+}
+
+#subtract{
+    grid-area: subtract;
+    background-color: orange;
+    /* font-weight: bold; */
+}
+
+#add{
+    grid-area: add;
+    background-color: rgb(214, 119, 214);
+    /* font-weight: bold; */
+}
+
+#equal_to{
+    grid-area: equal_to;
+    background-color: red;
+    /* font-weight: bold; */
+}
+
+#num1{
+    grid-area: num1;
+}
+
+#num2{
+    grid-area: num2;
+}
+
+#num3{
+    grid-area: num3;
+}
+
+#num4{
+    grid-area: num4;
+}
+
+#num5{
+    grid-area: num5;
+}
+
+#num6{
+    grid-area: num6;
+}
+
+#num7{
+    grid-area: num7;
+}
+
+#num8{
+    grid-area: num8;
+}
+
+#num9{
+    grid-area: num9;
+}
+
+#num0{
+    grid-area: num0;
+}
+
+#dot{
+    grid-area: dot;
+}
